@@ -7,9 +7,27 @@
 //
 
 #include <iostream>
+#include <stack>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+using namespace std;
+
+int main(int argc, const char * argv[])
+{
+    stack<int> stack1;
+
+    stack1.push(2);
+    stack1.push(4);
+    stack1.push(6);
+    cout << "顶部元素为：" << stack1.top() << endl;
+    stack1.pop();
+    cout << "顶部元素为：" << stack1.top() << endl;
+
+    cout << "stack是否为空：" << stack1.empty() << endl;
+    cout << "stack.size:" << stack1.size() << endl;
+
+
+
+
+
     return 0;
 }
